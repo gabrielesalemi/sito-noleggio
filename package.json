@@ -12,7 +12,7 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "express": "^4.15.3",
     "express-session": "^1.17.2",
     "helmet": "^4.6.0",
     "http-errors": "~1.6.3",
@@ -23,6 +23,8 @@
     "nodemailer": "^6.6.2",
     "querystring": "^0.2.1",
     "request": "^2.88.2",
-    "request-promise": "^4.2.6"
+    "request-promise": "^4.2.6",
+      "start": "node app.js",
+  "heroku-postbuild": "cd client && npm install && npm run build"
   }
 }
