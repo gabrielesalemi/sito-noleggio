@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-     "frontend": "npm start",
+    "start": "node app",
   },
   "dependencies": {
     "axios": "^0.21.1",
