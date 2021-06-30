@@ -42,13 +42,6 @@ app.use(function(err, req, res, next) {
     res.render('error');
 });
 
-app.use(express.static(path.join(__dirname, '/../frontend/build')));
-
-app.use('/api/', oneOfMyRoutes);
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/../frontend/build/'));
-});
 
 
 
