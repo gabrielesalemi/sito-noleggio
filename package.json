@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-"build": "cd frontend && npm run build",
+    "build": "cd frontend && npm run build",
+    "install": "cd client && npm install",
     "start": "node ./bin/www",
     "server": "nodemon app",
     "frontend": "npm start --prefix frontend",
