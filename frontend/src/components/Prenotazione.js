@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import '../App.css';
+import UserServiceApi from '../api/UserServiceApi.js';
 import Form from 'react-bootstrap/Form';
 
 class Prenotazione extends Component{
