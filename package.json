@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "start": "node server",
+    "server": "nodemon app",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "axios": "^0.21.1",
