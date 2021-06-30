@@ -42,6 +42,17 @@ app.use(function(err, req, res, next) {
     res.render('error');
 });
 
+if (process.env.NODE_ENV === "production") {
+  app.enable("trust proxy");
+
+  //Set static folder
+  app.use(express.static(path.join(__dirname, "/../frontend/build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + "/../frontend/build/index.html"));
+  });
+}
+
 
 
 
