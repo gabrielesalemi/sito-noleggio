@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+     "build": "cd frontend && npm run build",
+    "install": "cd frontend && npm install",
+    "start": "node ./bin/www",
+        "frontend": "npm start --prefix frontend",
   },
   "dependencies": {
     "axios": "^0.21.1",
