@@ -6,9 +6,8 @@
     "build": "cd frontend && npm run build",
     "install": "cd frontend && npm install",
     "start": "node app",
-    "server": "nodemon app",
     "client": "npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run start\" \"npm run client\""
   },
   "dependencies": {
     "axios": "^0.21.1",
