@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+"build": "cd frontend && npm run build",
+    "install": "cd frontend && npm install",
     "start": "node app",
+    "server": "nodemon app",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },
   "dependencies": {
     "axios": "^0.21.1",
