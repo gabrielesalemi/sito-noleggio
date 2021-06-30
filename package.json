@@ -8,6 +8,7 @@
     "start": "node app",
     "server": "nodemon app",
     "client": "npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "axios": "^0.21.1",
