@@ -9,9 +9,7 @@
     "server": "nodemon app",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\""
-      "engines": {
-    "node": "14.17.0"
-  }
+
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -32,6 +30,6 @@
     "querystring": "^0.2.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
-     "node": "14.17.0"
+     "node": "14.x"
   }
 }
